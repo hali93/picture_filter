@@ -9,7 +9,7 @@
  }
  [class*='col-'] {
 	float: left;
-	Min-height: 1px;
+	min-height: 1px;
 }
 body {
 	background-color: #e5e3d5;
