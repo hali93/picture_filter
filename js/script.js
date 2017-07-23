@@ -1,19 +1,10 @@
-var arraySelect = document.getElementsByTagName('select');
-
-
+var filters = document.getElementById('background');
 var element = document.getElementById('content');
+document.getElementById('filters').addEventListener('click', dropdownStyles);
 
+function dropdownStyles() {
+	var value = event.target.value;
+	var style = event.target.id;
 
-function dropdownStyles(){
-    
-    var style = this.id;
-    var value = this.value;
-    
-    element.style[style] = value;
-    
-}
-
-for( var i = 0; i < arraySelect.length; i++ ){
-    
-    arraySelect[i].addEventListener( 'change', dropdownStyles );
+	element.style[style] = value;
 }
