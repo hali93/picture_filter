@@ -1,6 +1,6 @@
 var filters = document.getElementById('background');
 var element = document.getElementById('content');
-document.getElementById('filters').addEventListener('click', dropdownStyles);
+document.getElementById('filters').addEventListener('change', dropdownStyles);
 
 function dropdownStyles() {
 	var value = event.target.value;
